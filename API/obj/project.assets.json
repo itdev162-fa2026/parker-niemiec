@@ -117,8 +117,8 @@
     },
     "Persistence/1.0.0": {
       "type": "project",
-      "path": "../Persistence/Persistence.csproj",
-      "msbuildProject": "../Persistence/Persistence.csproj"
+      "path": "../persistence/Persistence.csproj",
+      "msbuildProject": "../persistence/Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {

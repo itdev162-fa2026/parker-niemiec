@@ -4,7 +4,6 @@ namespace Domain;
 
 public class WeatherForecast
 {
-    public int Id { get; set; }
 
     public DateOnly Date { get; set; }
 
