@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lDIAFiAT4mo=",
+  "dgSpecHash": "dPK9v2FEfqo=",
   "success": true,
-  "projectFilePath": "C:\\itdev162\\parker-niemiec\\API\\API.csproj",
+  "projectFilePath": "C:\\itdev162\\parker-niemiec\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pniem\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.8\\microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
     "C:\\Users\\Pniem\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.9\\microsoft.data.sqlite.core.9.0.9.nupkg.sha512",
