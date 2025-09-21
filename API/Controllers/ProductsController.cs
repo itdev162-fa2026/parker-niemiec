@@ -16,6 +16,7 @@ public class ProductsController : ControllerBase
         _logger = logger;
         _context = context;
     }
+
     [HttpGet]
     public ActionResult<IEnumerable<Product>> GetProducts()
     {
