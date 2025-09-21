@@ -49,7 +49,66 @@ public class ProductsController : ControllerBase
             return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, product);
         }
 
-        return BadRequest("Failed to create product.");    
-        
+        return BadRequest("Failed to create product.");
+
     }
+
+    [HttpPut("{id}")]
+    public ActionResult<Product> UpdateProduct(int id, Product product)
+    {
+        var existingProduct = _context.Products.Find(id);
+
+        if (existingProduct == null)
+        {
+            return NotFound();
+        }
+
+        //Update All editable properties
+        existingProduct.Name = product.Name;
+        existingProduct.Description = product.Description;
+        existingProduct.Price = product.Price;
+        existingProduct.IsOnSale = product.IsOnSale;
+        existingProduct.SalePrice = product.SalePrice;
+        existingProduct.CurrentStock = product.CurrentStock;
+        existingProduct.ImageUrl = product.ImageUrl;
+        existingProduct.LastUpdatedDate = DateTime.Now;
+
+        var success = _context.SaveChanges() > 0;
+
+        if (success)
+        {
+            return Ok(existingProduct);
+        }
+
+        return BadRequest("Failed to update product.");
+
+    }
+
+    [HttpDelete("{id}")]
+    public ActionResult DeleteProduct(int id)
+    {
+        var product = _context.Products.Find(id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        _context.Products.Remove(product);
+        var success = _context.SaveChanges() > 0;
+
+        if (success)
+        {
+            return NoContent();
+        }
+
+        return BadRequest("Failed to delete product.");
+    }
+
+    /*Key Points:
+     *PUT endpoint updates existing products and preserves the original CreatedDate
+     *DELETE endpoint returns 204 No Content on successful deletion
+     *Both endpoints return 404 Not Found if the product doesn't exist
+     *Audit trail is maintained by updating LastUpdatedDate on modifications
+     */
 }
