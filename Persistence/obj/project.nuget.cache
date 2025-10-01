@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TXQCG886U0w=",
+  "dgSpecHash": "bbvhDusTEk0=",
   "success": true,
-  "projectFilePath": "C:\\itdev162\\parker-niemiec\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\itdev162\\parker-niemiec\\persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pniem\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Pniem\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
