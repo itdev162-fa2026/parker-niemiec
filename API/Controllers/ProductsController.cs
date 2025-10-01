@@ -39,6 +39,13 @@ public class ProductsController : ControllerBase
     [HttpPost]
     public ActionResult<Product> CreateProduct(Product product)
     {
+        // check model validation
+        if (!ModelState.IsValid)
+        {
+            return UnprocessableEntity(ModelState);
+        }
+
+        // Set audit dates
         product.CreatedDate = DateTime.Now;
         product.LastUpdatedDate = DateTime.Now;
 
@@ -57,6 +64,12 @@ public class ProductsController : ControllerBase
     [HttpPut("{id}")]
     public ActionResult<Product> UpdateProduct(int id, Product product)
     {
+        // check model validation
+        if (!ModelState.IsValid)
+        {
+            return UnprocessableEntity(ModelState);
+        }
+        
         var existingProduct = _context.Products.Find(id);
 
         if (existingProduct == null)
