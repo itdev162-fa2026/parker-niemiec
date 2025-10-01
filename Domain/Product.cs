@@ -1,11 +1,13 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using Domain.Validation;
 
 namespace Domain;
 
+[ValidSalePrice]
 public class Product
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
 
     [Required(ErrorMessage = "Product name is required")]
     [StringLength(100, ErrorMessage = "Product name cannot exceed 100 characters")]
