@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\itdev162\\parker-niemiec\\api\\API.csproj": {}
+    "C:\\itdev162\\parker-niemiec\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\itdev162\\parker-niemiec\\api\\API.csproj": {
+    "C:\\itdev162\\parker-niemiec\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\itdev162\\parker-niemiec\\api\\API.csproj",
+        "projectUniqueName": "C:\\itdev162\\parker-niemiec\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\itdev162\\parker-niemiec\\api\\API.csproj",
+        "projectPath": "C:\\itdev162\\parker-niemiec\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Pniem\\.nuget\\packages\\",
-        "outputPath": "C:\\itdev162\\parker-niemiec\\api\\obj\\",
+        "outputPath": "C:\\itdev162\\parker-niemiec\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
